@@ -1,0 +1,56 @@
+@import 'media queries';
+
+footer {
+
+    h6 {
+        color: $gray-color;
+        margin-top: 70px;
+        margin-bottom: 70px;
+        margin-left: 550px;
+
+        @include tablet {
+            margin-left: 80px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
+    nav {
+        background-color: $white-color;
+        @include flexCenter;
+        height: 60px;
+
+        @include tablet {
+            width: 768px;
+            height: 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        a {
+            margin-left: 50px;
+            text-decoration: none;
+            color: $black-color;
+            font-weight: map-get($font-weights, bold);
+            text-align: center;
+            
+            @include tablet {
+                font-size: 14px;
+            }
+
+            &:hover {
+                color: $gray-color;
+            }
+        }
+
+        #serbia {
+            margin-left: 400px;
+        }         
+    }
+
+    section {
+        @include flexCenter;       
+        height: 70px;
+        cursor: default;
+    }
+}
